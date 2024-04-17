@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--  -->
+        <title>Portal Acad&eacute;mico - Poli</title>
+
+        <!--  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+        <!-- Barra de Navegación -->
+        <div class="menu-opciones">
+            <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.png" width="150px" alt="LogoPoli">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="home.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Gesti&oacute;n de Materias
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="listado-materias.html">Listado Materias Disponibles</a></li>
+                                    <li><a class="dropdown-item" href="inscripcion-materias.html">Inscripci&oacute;n Materias</a></li>
+                                    <li><a class="dropdown-item" href="#">Resumen - Horario</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cont&aacute;ctenos</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                    <div class="p-3">
+                        <hr style="border: none; border-left: 1px solid black; height: 50px;">
+                    </div>
+                    <div class="p-3">
+                        <a href="login.html" type="button" class="btn btn-danger">Cerrar Sesi&oacute;n</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    <!-- Seccion de cursos-->
+    <main class="flex-shrink-0">
+        <div class="container-fluid text-center">
+            <h1>Cursos</h1>
+        </div>
+
+
+          <div class="container mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Lista con scroll -->
+                    <div class="list-group" style="max-height: 400px; overflow-y: scroll;">
+                        <!-- Elemento de la lista -->
+                        <div class="list-group-item">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="images/ingles.jpg" alt="Imagen" class="img-fluid" width="700">
+                                </div>
+                                <div class="col-md-8">
+                                    <h5 class="mb-1">Inglés</h5>
+                                    <p class="mb-1"><b>300 horas</b></p>
+                                    <p class="large mb-1" >Sumérgete en el idioma universal con nuestro curso de Inglés, diseñado para mejorar tus habilidades
+                                        comunicativas, enriquecer tu vocabulario y perfeccionar tu pronunciación. Ya seas
+                                        principiante o busques dominar el idioma, nuestro curso te abrirá las puertas a nuevas oportunidades en todo el mundo.</p>
+                                    <!-- Boton de incripcion al curso-->
+                                    <div class="col-md-12 d-flex justify-content-end">
+                                        <button class="btn btn-success">Inscribirse</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Lista con scroll -->
+                    <div class="list-group" style="max-height: 400px; overflow-y: scroll;">
+                        <!-- Elemento de la lista -->
+                        <div class="list-group-item">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="images/calc.png" alt="Imagen" class="img-fluid" width="700">
+                                </div>
+                                <div class="col-md-8">
+                                    <h5 class="mb-1">Cálculo</h5>
+                                    <p class="mb-1"><b>150 horas</b></p>
+                                    <p class="large mb-1">Descifra los secretos del universo a través del lenguaje de las matemáticas con nuestro curso intensivo
+                                        de Cálculo. Ideal para estudiantes y profesionales que desean profundizar en conceptos de derivadas,
+                                        integrales y mucho más, este curso es esencial para aquellos que buscan excelencia en carreras de ciencias e ingeniería.</p>
+                                    <!-- Boton de incripcion al curso-->
+                                    <div class="col-md-12 d-flex justify-content-end">
+                                        <button class="btn btn-success">Inscribirse</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Lista con scroll -->
+                    <div class="list-group" style="max-height: 400px; overflow-y: scroll;">
+                        <!-- Elemento de la lista -->
+                        <div class="list-group-item">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="images/Programacion.jpg" alt="Imagen" class="img-fluid" width="700">
+                                </div>
+                                <div class="col-md-8">
+                                    <h5 class="mb-1">Fundamentos de programación</h5>
+                                    <p class="mb-1"><b>200 horas</b></p>
+                                    <p class="large mb-1">Entra en el mundo digital y aprende a crear software que puede cambiar el mundo con
+                                        nuestro curso de Programación. Desde lenguajes fundamentales como Python y Java hasta desarrollo web y
+                                        aplicaciones móviles, te equiparemos con las habilidades necesarias para triunfar en la era de la información.</p>
+                                    <!-- Boton de incripcion al curso-->
+                                    <div class="col-md-12 d-flex justify-content-end">
+                                        <button class="btn btn-success">Inscribirse</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Lista con scroll -->
+                    <div class="list-group" style="max-height: 400px; overflow-y: scroll;">
+                        <!-- Elemento de la lista -->
+                        <div class="list-group-item">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="images/Frances.jpg" alt="Imagen" class="img-fluid" width="700">
+                                </div>
+                                <div class="col-md-8">
+                                    <h5 class="mb-1">Francés</h5>
+                                    <p class="mb-1"><b>300 horas</b></p>
+                                    <p class="large mb-1">Explora la riqueza del idioma de Molière con nuestro curso de Francés.
+                                        Ya sea que te atraigan los encantos de París o los deliciosos sabores
+                                        de la cocina francesa, aprender francés te abrirá un universo de cultura, historia y romance.</p>
+                                    <!-- Boton de incripcion al curso-->
+                                    <div class="col-md-12 d-flex justify-content-end">
+                                        <button class="btn btn-success">Inscribirse</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Lista con scroll -->
+                    <div class="list-group" style="max-height: 400px; overflow-y: scroll;">
+                        <!-- Elemento de la lista -->
+                        <div class="list-group-item">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="images/Quimica.jpg" alt="Imagen" class="img-fluid" width="700">
+                                </div>
+                                <div class="col-md-8">
+                                    <h5 class="mb-1">Química</h5>
+                                    <p class="mb-1"><b>150 horas</b></p>
+                                    <p class="large mb-1">Experimenta la magia de la transformación de la materia en nuestro curso de Química.
+                                        Aprende sobre reacciones químicas, la tabla periódica y los procesos que subyacen a la vida misma.
+                                        Este curso es perfecto para estudiantes que aspiran a carreras en medicina, ingeniería o ciencias ambientales.</p>
+                                    <!-- Boton de incripcion al curso-->
+                                    <div class="col-md-12 d-flex justify-content-end">
+                                        <button class="btn btn-success">Inscribirse</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Lista con scroll -->
+                    <div class="list-group" style="max-height: 400px; overflow-y: scroll;">
+                        <!-- Elemento de la lista -->
+                        <div class="list-group-item">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="images/Astro.jpg" alt="Imagen" class="img-fluid" width="700">
+                                </div>
+                                <div class="col-md-8">
+                                    <h5 class="mb-1">Astronomía</h5>
+                                    <p class="mb-1"><b>100 horas</b></p>
+                                    <p class="large mb-1">Viaja a través del cosmos y descubre los misterios del universo en
+                                        nuestro curso de Astronomía. Desde los movimientos de los planetas hasta las profundidades
+                                        de los agujeros negros, este curso es una ventana a los fenómenos más fascinantes del universo.</p>
+                                    <!-- Boton de incripcion al curso-->
+                                    <div class="col-md-12 d-flex justify-content-end">
+                                        <button class="btn btn-success">Inscribirse</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Lista con scroll -->
+                    <div class="list-group" style="max-height: 400px; overflow-y: scroll;">
+                        <!-- Elemento de la lista -->
+                        <div class="list-group-item">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="images/Emprendimiento.jpg" alt="Imagen" class="img-fluid" width="700">
+                                </div>
+                                <div class="col-md-8">
+                                    <h5 class="mb-1">Emprendimiento</h5>
+                                    <p class="mb-1"><b>100 horas</b></p>
+                                    <p class="large mb-1">Conviértete en el líder empresarial de mañana con nuestro curso de
+                                        Emprendimiento. Aprende todo sobre cómo iniciar y gestionar un negocio, desde la
+                                        ideación hasta la ejecución. Este curso está diseñado para inspirar y equipar
+                                        a futuros empresarios con las herramientas necesarias para innovar y triunfar en un mercado competitivo.</p>
+                                    <!-- Boton de incripcion al curso-->
+                                    <div class="col-md-12 d-flex justify-content-end">
+                                        <button class="btn btn-success">Inscribirse</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Lista con scroll -->
+                    <div class="list-group" style="max-height: 400px; overflow-y: scroll;">
+                        <!-- Elemento de la lista -->
+                        <div class="list-group-item">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="images/fisica.jpg" alt="Imagen" class="img-fluid" width="700">
+                                </div>
+                                <div class="col-md-8">
+                                    <h5 class="mb-1">Física</h5>
+                                    <p class="mb-1"><b>200 horas</b></p>
+                                    <p class="large mb-1">Descubre las leyes que rigen el universo y cómo aplicarlas en
+                                        nuestro dinámico curso de Física. Desde la mecánica clásica hasta la física cuántica, este curso fortalecerá
+                                        tu comprensión del mundo físico y es ideal para estudiantes que buscan una carrera en ciencias o ingeniería.</p>
+                                    <!-- Boton de incripcion al curso-->
+                                    <div class="col-md-12 d-flex justify-content-end">
+                                        <button class="btn btn-success">Inscribirse</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br />
+
+    </main>
+
+        <footer class="mt-auto">
+            <div class="footer-personalizado">
+                <div class="row p-5 pb-1 bg-dark text-white">
+                    <div class="col-xs-12 col-md-6 col-lg-6">
+                        <p class="h3 mb-3">Portal Acad&eacute;mico - Poli</p>
+                        <p class="text-secondary">Bogotá, Colombia</p>
+                    </div>
+                    <div class="col-xs-12 col-md-4 col-lg-3">
+                        <p class="h5 mb-3">Redes Sociales</p>
+                        <div class="mb-2">
+                            <a class="text-secondary text-decoration-none" href="#">Facebook</a>
+                        </div>
+                        <div class="mb-2">
+                            <a class="text-secondary text-decoration-none" href="#">Instagram</a>
+                        </div>
+                        <div class="mb-2">
+                            <a class="text-secondary text-decoration-none" href="#">Youtube</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4 col-lg-3">
+                        <p class="h5 mb-3">Links</p>
+                        <div class="mb-2">
+                            <a class="text-secondary text-decoration-none" href="#">Terminos y Condiciones</a>
+                        </div>
+                        <div class="mb-2">
+                            <a class="text-secondary text-decoration-none" href="#">Politica de privacidad</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 pt-5">
+                        <p class="text-white text-center"><small>© Copyright 2024 - All Rights Reserved</small></p>
+                    </div>
+                </div>            
+            </div>
+          </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous">
+        </script>
+    </body>
+</html>
