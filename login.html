@@ -37,15 +37,14 @@
               <form action="#">
                    <div class="mb-4">
                         <label for="email" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" name="email">
+                        <input type="email" class="form-control" id="email">
                    </div>
                    <div class="mb-4">
                         <label for="password" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" name="password">
+                        <input type="password" class="form-control" id="password">
                    </div>
                    <div class="d-grid">
-                    <a href="home.html" type="button" class="btn btn-primary">Iniciar Sesi&oacute;n Estudiante</a><br />
-                    <a href="gestion-materias.html" type="button" class="btn btn-primary">Iniciar Sesi&oacute;n Administrador</a>
+                        <button type="submit" class="btn btn-primary" onclick="return loguear()">Iniciar Sesión</button>
                    </div>
                    <div class="my-3">
                      <span>¿No tienes cuenta? <a href="#">Regístrate</a> </span> <br>
@@ -92,8 +91,12 @@
 
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/js_login.js"></script>
 </body>
 
 </html>
 
 
+    

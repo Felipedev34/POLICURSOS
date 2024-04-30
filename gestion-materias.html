@@ -65,76 +65,90 @@
                     <br />
                     <br />
                     <div class="table-responsive scrollbar">
-                        <table id="tableMaterias" class="table mb-0 data-table fs--1 table-bordered">
+                        <table class="table mb-0 data-table fs--1 table-bordered">
                             <thead class="bg-200 text-900">
                                 <tr>
                                     <th class="sort" data-sort="materias">Materias (M)</th>
                                     <th class="sort" data-sort="horas">Horas (H)</th>
                                     <th class="sort" data-sort="profesor">Profesor (P)</th>
-                                    <th class="sort">Habilitar</th>
+                                    <th class="sort">Editar</th>
+                                    <th class="sort">Eliminar</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td scope="row">Matematicas</td>
-                                    <td>180</td>
-                                    <td>Carlos Mendoza</td>
-                                    <td>
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
-                                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">Metodos Numericos</td>
-                                    <td>25</td>
-                                    <td>Steven Cardenas</td>
-                                    <td>
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
-                                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">Sistemas operacionales</td>
-                                    <td>41</td>
-                                    <td>Andres Gonzalo</td>
-                                    <td>
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
-                                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">Teoria de la computacion</td>
-                                    <td>60</td>
-                                    <td>Leonardo Lara</td>
-                                    <td>
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
-                                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">Telecomunicaciones</td>
-                                    <td>120</td>
-                                    <td>Maria Manchego</td>
-                                    <td>
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
-                                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
-                                    </td>
-                                </tr>
+                            <tbody id="tableGestionMaterias">
                             </tbody>
                         </table>
                     </div>
                     <br /><br />
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button type="button" class="btn btn-primary">Añadir Materia</button>
-                        <button type="button" class="btn btn-danger">Eliminar Materia</button>
-                        <button type="button" class="btn btn-secondary">Modificar Materia</button>
-                        <button type="button" class="btn btn-success">Listo</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#CrearMateria">Añadir Materia</button>
                     </div>
                 </div>
             </div>
             <br /><br />
         </div>
-
+        <!-- Definición de Modal para creación de Materias -->
+        <div class="modal fade" id="CrearMateria" tabindex="-1" aria-labelledby="crearMateriaLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Nueva Materia</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-3 mt-2 mb-2">
+                            <div class="col-md-12">
+                                <label class="form-label">Nombre Materia</label>
+                                <input id="txtNombreMateria" type="text" class="form-control" />
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label">Nombre Profesor</label>
+                                <input id="txtNombreProfesor" type="text" class="form-control" />
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label">Cantidad Horas</label>
+                                <input id="txtHoras" type="number" class="form-control" />
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button id="btnGuardarMaterias" type="button" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Definición de Modal para editar de Materias -->
+        <div class="modal fade" id="EditarMateria" tabindex="-1" aria-labelledby="editarMateriaLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Editar Materia</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-3 mt-2 mb-2">
+                            <div class="col-md-12">
+                                <label class="form-label">Nombre Materia</label>
+                                <input id="txtNombreMateriaEdit" type="text" class="form-control" />
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label">Nombre Profesor</label>
+                                <input id="txtNombreProfesorEdit" type="text" class="form-control" />
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label">Cantidad Horas</label>
+                                <input id="txtHorasEdit" type="number" class="form-control" />
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button id="btnEditarMaterias" type="button" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Definición del Footer -->
         <footer>
             <div class="footer-personalizado">
@@ -176,5 +190,8 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous">
         </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/js_gestion_materias.js"></script>
     </body>
 </html>
