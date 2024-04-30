@@ -37,7 +37,6 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="listado-materias.html">Listado Materias Disponibles</a></li>
-                                    <li><a class="dropdown-item" href="inscripcion-materias.html">Inscripci&oacute;n Materias</a></li>
                                     <li><a class="dropdown-item" href="resumen-materias.html">Resumen - Horario</a></li>
                                 </ul>
                             </li>
@@ -85,66 +84,16 @@
                                     <th class="sort">Eliminar</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="aling-center">Matematicas</td>
-                                    <td class="aling-center">180</td>
-                                    <td class="aling-center">Carlos Mendoza</td>
-                                    <td class="text-center">
-                                        <button type="button" class="btn btn-danger btn-sm mx-2">
-                                            <i class="bi bi-trash3-fill"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="aling-center">Metodos Númericos</td>
-                                    <td class="aling-center">25</td>
-                                    <td class="aling-center">Steven Cardenas</td>
-                                    <td class="text-center">
-                                        <button type="button" class="btn btn-danger btn-sm mx-2">
-                                            <i class="bi bi-trash3-fill"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="aling-center">Sistemas Operacionales</td>
-                                    <td class="aling-center">41</td>
-                                    <td class="aling-center">Andres Gonzalo</td>
-                                    <td class="text-center">
-                                        <button type="button" class="btn btn-danger btn-sm mx-2">
-                                            <i class="bi bi-trash3-fill"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="aling-center">Teoria de la Computación</td>
-                                    <td class="aling-center">60</td>
-                                    <td class="aling-center">Leonardo Lara</td>
-                                    <td class="text-center">
-                                        <button type="button" class="btn btn-danger btn-sm mx-2">
-                                            <i class="bi bi-trash3-fill"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="aling-center">Telecomunicaciones</td>
-                                    <td class="aling-center">120</td>
-                                    <td class="aling-center">Maria Manchego</td>
-                                    <td class="text-center">
-                                        <button type="button" class="btn btn-danger btn-sm mx-2">
-                                            <i class="bi bi-trash3-fill"></i>
-                                        </button>
-                                    </td>
-                                </tr>
+                            <tbody id="tableInscripcionMaterias">
                             </tbody>
                         </table>
                     </div>
                     <br /><br />
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <a href="inscripcion-materias.html" type="button" class="btn btn-primary">
+                        <a href="inscripcion-materias.html" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#InscribirMateria">
                             <i class="bi bi-plus-circle"></i> Inscribir Materia
                         </a>
-                        <a href="#" type="button" class="btn btn-primary">
+                        <a href="resumen-materias.html" type="button" class="btn btn-primary">
                             <i class="bi bi-list-check"></i> Resumen
                         </a>
                     </div>
@@ -152,7 +101,36 @@
             </div>
             <br /><br />
         </div>
-
+        <!-- Definición de Modal para inscribir de Materias -->
+        <div class="modal fade" id="InscribirMateria" tabindex="-1" aria-labelledby="editarMateriaLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Inscribir Materia</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="ddlIdMaterias" class="form-label">Materia a inscribir: </label>
+                            <select id="ddlIdMaterias" class="form-select" aria-label="Materias" required>
+                                <option value="">Seleccione...</option>
+                                <option value="0">Matematicas</option>
+                                <option value="1">Metodos Númericos</option>
+                                <option value="2">Sistemas Operacionales</option>
+                                <option value="3">Teoria de la Computación</option>
+                                <option value="4">Telecomunicaciones</option>
+                                <option value="5">Inglés</option>
+                                <option value="6">Cátedra</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button id="btnInscribirMaterias" type="button" class="btn btn-primary">Inscribir Materia</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Definición del Footer -->
         <footer>
             <div class="footer-personalizado">
@@ -194,5 +172,8 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous">
         </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/js_inscripcion_materias.js"></script>
     </body>
 </html>
