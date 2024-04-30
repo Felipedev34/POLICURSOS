@@ -9,4 +9,4 @@ Proyecto de la asignatura Front-End, en la cual pondremos nuestros conocimientos
 * JHONNY SEBASTIAN RICARDO PESILLO
 
 ## INSTRUCCIONES
-Descargue el proyecto en su totalidad e inicie la apliación mediante el archvio login.html.
+Descargue el proyecto en su totalidad e inicie la apliación mediante el archvio login.html, para un mayor rendimiento se recomienda utilizar Visual Studio Code con el complemento Live Server.
