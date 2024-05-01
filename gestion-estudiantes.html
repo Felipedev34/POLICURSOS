@@ -1,166 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Titulo de la página-->
-        <title>Portal Acad&eacute;mico - Poli</title>
-        <!-- Referencias hojas de estilos para el uso de Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <link href="css/styles.css" rel="stylesheet">
-    </head>
-    <body>
-        <!-- Definición del Menú de Opciones -->
-        <div class="menu-opciones">
-            <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="images/logo.png" width="150px" alt="LogoPoli">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="gestion-materias.html">Crear Materias</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="gestion-estudiantes.html">Crear Estudiantes</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                            <button class="btn btn-outline-success" type="submit">Buscar</button>
-                        </form>
-                    </div>
-                    <div class="p-3">
-                        <hr style="border: none; border-left: 1px solid black; height: 50px;">
-                    </div>
-                    <div class="p-3">
-                        <a href="login.html" type="button" class="btn btn-danger">Cerrar Sesi&oacute;n</a>
-                    </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo de la página-->
+    <title>Portal Acad&eacute;mico - Poli</title>
+    <!-- Referencias hojas de estilos para el uso de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Definición del Menú de Opciones -->
+    <div class="menu-opciones">
+        <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" width="150px" alt="LogoPoli">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="gestion-materias.html">Crear Materias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gestion-estudiantes.html">Crear Estudiantes</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
                 </div>
-            </nav>
-        </div>
-        <!-- Definición de div con clase Container para incluir información del usuario logueado y el 
+                <div class="p-3">
+                    <hr style="border: none; border-left: 1px solid black; height: 50px;">
+                </div>
+                <div class="p-3">
+                    <a href="login.html" type="button" class="btn btn-danger">Cerrar Sesi&oacute;n</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Definición de div con clase Container para incluir información del usuario logueado y el 
             listado de campos requeridos para crear estudiantes -->
-        <div class="container-fluid">
-            <div class="row p-1 pb-1">
-                <div class="col-xs-12 col-md-4 col-lg-2">
-                    <center><img src="images/avatar-icon-admin.png" width="150px" alt="avatar-icon"></center>
-                    <h5 class="text-center">Sebastian Olaya Q.</h5>
-                    <h6 class="text-center">Administrador</h6>
+    <div class="container-fluid">
+        <div class="row p-1 pb-1">
+            <div class="col-xs-12 col-md-4 col-lg-2">
+                <center><img src="images/avatar-icon-admin.png" width="150px" alt="avatar-icon"></center>
+                <h5 class="text-center">Sebastian Olaya Q.</h5>
+                <h6 class="text-center">Administrador</h6>
+            </div>
+            <div class="col-lg-1">
+                <hr style="border: none; border-left: 1px solid black; height: 400px;">
+            </div>
+            <div class="col-xs-12 col-md-8 col-lg-9">
+                <h5>Gesti&oacute;n de Estudiantes</h5>
+                <br />
+                <br />
+                <div class="mb-3">
+                    <label for="nombres" class="form-label">Nombres</label>
+                    <!-- Etiqueta para el campo de nombre del estudiante -->
+                    <input type="text" class="form-control" id="nombres" name="nombres" required>
+                    <!-- Campo de texto para el nombre del estudiante, requerido -->
                 </div>
-                <div class="col-lg-1"> 
-                    <hr style="border: none; border-left: 1px solid black; height: 400px;">
+                <div class="mb-3">
+                    <label for="apellidos" class="form-label">Apellidos</label>
+                    <!-- Etiqueta para el campo de apellido del estudiante -->
+                    <input type="text" class="form-control" id="apellidos" name="apellidos" required>
+                    <!-- Campo de texto para el apellido del estudiante, requerido -->
                 </div>
-                <div class="col-xs-12 col-md-8 col-lg-9">
-                    <h5>Gesti&oacute;n de Estudiantes</h5>
-                    <br />
-                    <br />
-                    <div class="mb-3">
-                        <label for="nombres" class="form-label">Nombres</label>
-                        <!-- Etiqueta para el campo de nombre del estudiante -->
-                        <input type="text" class="form-control" id="nombres" name="nombres" required>
-                        <!-- Campo de texto para el nombre del estudiante, requerido -->
-                    </div>
-                    <div class="mb-3">
-                        <label for="apellidos" class="form-label">Apellidos</label>
-                        <!-- Etiqueta para el campo de apellido del estudiante -->
-                        <input type="text" class="form-control" id="apellidos" name="apellidos" required>
-                        <!-- Campo de texto para el apellido del estudiante, requerido -->
-                    </div>
-                    <div class="mb-3">
-                        <label for="ocupacion" class="form-label">Apellidos</label>
-                        <!-- Etiqueta para el campo de ocupacion del estudiante -->
-                        <input type="text" class="form-control" id="ocupacion" name="ocupacion" required>
-                        <!-- Campo de texto para el ocupacion del estudiante, requerido -->
-                    </div>
-                    <div class="mb-3">
-                        <label for="edad" class="form-label">Edad</label>
-                        <!-- Etiqueta para el campo de edad -->
-                        <input type="number" class="form-control" id="edad" name="edad" required>
-                        <!-- Campo de edad para el estudiante, requerido -->
-                    </div>
-                    <div class="mb-3">
-                        <label for="direccion" class="form-label">Dirección</label>
-                        <!-- Etiqueta para el campo de dirección -->
-                        <input type="text" class="form-control" id="direccion" name="direccion" required>
-                        <!-- Campo de texto para la dirección del estudiante, requerido -->
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Correo Electrónico</label>
-                        <!-- Etiqueta para el campo de correo electrónico -->
-                        <input type="email" class="form-control" id="email" name="email" required>
-                        <!-- Campo de correo electrónico para el estudiante, requerido -->
-                    </div>
-                    <div class="mb-3">
-                        <label for="phone" class="form-label">Número de Teléfono</label>
-                        <!-- Etiqueta para el campo de número de teléfono -->
-                        <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{10}" required>
-                        <!-- Campo de teléfono para el estudiante con un patrón para 10 dígitos numéricos, requerido -->
-                    </div>
-                    <div class="mb-3">
-                        <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
-                        <!-- Etiqueta para el campo de fecha de nacimiento -->
-                        <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento" required>
-                        <!-- Campo de fecha para la fecha de nacimiento, requerido -->
-                    </div>
-                    <br /><br />
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <a href="gestion-materias.html" type="button" class="btn btn-secondary">Atras</a>
-                        <button type="button" class="btn btn-primary">Registrar</button>
-                    </div>
+                <div class="mb-3">
+                    <label for="ocupacion" class="form-label">Ocupación</label>
+                    <!-- Etiqueta para el campo de ocupacion del estudiante -->
+                    <input type="text" class="form-control" id="ocupacion" name="ocupacion" required>
+                    <!-- Campo de texto para el ocupacion del estudiante, requerido -->
+                </div>
+                <div class="mb-3">
+                    <label for="edad" class="form-label">Edad</label>
+                    <!-- Etiqueta para el campo de edad -->
+                    <input type="number" class="form-control" id="edad" name="edad" required>
+                    <!-- Campo de edad para el estudiante, requerido -->
+                </div>
+                <div class="mb-3">
+                    <label for="direccion" class="form-label">Dirección</label>
+                    <!-- Etiqueta para el campo de dirección -->
+                    <input type="text" class="form-control" id="direccion" name="direccion" required>
+                    <!-- Campo de texto para la dirección del estudiante, requerido -->
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <!-- Etiqueta para el campo de correo electrónico -->
+                    <input type="email" class="form-control" id="email" name="email" required>
+                    <!-- Campo de correo electrónico para el estudiante, requerido -->
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Número de Teléfono</label>
+                    <!-- Etiqueta para el campo de número de teléfono -->
+                    <input type="text" class="form-control" id="phone" name="phone" required>
+                    <!-- Campo de teléfono para el estudiante con un patrón para 10 dígitos numéricos, requerido -->
+                </div>
+                <div class="mb-3">
+                    <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
+                    <!-- Etiqueta para el campo de fecha de nacimiento -->
+                    <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento" required>
+                    <!-- Campo de fecha para la fecha de nacimiento, requerido -->
+                </div>
+                <br /><br />
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="gestion-materias.html" type="button" class="btn btn-secondary">Atras</a>
+                    <button type="submit" class="btn btn-primary" onclick="return validarFormulario()">Registrar</button>
                 </div>
             </div>
-            <br /><br />
         </div>
-        <!-- Definición del Footer -->
-        <footer>
-            <div class="footer-personalizado">
-                <div class="row p-5 pb-1 bg-dark text-white">
-                    <div class="col-xs-12 col-md-6 col-lg-6">
-                        <p class="h3 mb-3">Portal Acad&eacute;mico - Poli</p>
-                        <p class="text-secondary">Bogotá, Colombia</p>
+        <br /><br />
+    </div>
+    <!-- Definición del Footer -->
+    <footer>
+        <div class="footer-personalizado">
+            <div class="row p-5 pb-1 bg-dark text-white">
+                <div class="col-xs-12 col-md-6 col-lg-6">
+                    <p class="h3 mb-3">Portal Acad&eacute;mico - Poli</p>
+                    <p class="text-secondary">Bogotá, Colombia</p>
+                </div>
+                <div class="col-xs-12 col-md-4 col-lg-3">
+                    <p class="h5 mb-3">Redes Sociales</p>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Facebook</a>
                     </div>
-                    <div class="col-xs-12 col-md-4 col-lg-3">
-                        <p class="h5 mb-3">Redes Sociales</p>
-                        <div class="mb-2">
-                            <a class="text-secondary text-decoration-none" href="#">Facebook</a>
-                        </div>
-                        <div class="mb-2">
-                            <a class="text-secondary text-decoration-none" href="#">Instagram</a>
-                        </div>
-                        <div class="mb-2">
-                            <a class="text-secondary text-decoration-none" href="#">Youtube</a>
-                        </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Instagram</a>
                     </div>
-                    <div class="col-xs-12 col-md-4 col-lg-3">
-                        <p class="h5 mb-3">Links</p>
-                        <div class="mb-2">
-                            <a class="text-secondary text-decoration-none" href="#">Terminos y Condiciones</a>
-                        </div>
-                        <div class="mb-2">
-                            <a class="text-secondary text-decoration-none" href="#">Politica de privacidad</a>
-                        </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Youtube</a>
                     </div>
-                    <div class="col-xs-12 pt-5">
-                        <p class="text-white text-center"><small>© Copyright 2024 - All Rights Reserved</small></p>
+                </div>
+                <div class="col-xs-12 col-md-4 col-lg-3">
+                    <p class="h5 mb-3">Links</p>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Terminos y Condiciones</a>
                     </div>
-                </div>            
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Politica de privacidad</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 pt-5">
+                    <p class="text-white text-center"><small>© Copyright 2024 - All Rights Reserved</small></p>
+                </div>
             </div>
-        </footer>
-        <!-- Referencias javascript para el uso de Bootstrap  -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous">
+        </div>
+    </footer>
+    <!-- Referencias javascript para el uso de Bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
-        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/js_gestion_estudiantes.js"></script>
+</body>
+
 </html>
