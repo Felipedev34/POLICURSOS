@@ -10,20 +10,32 @@ function validarFormulario() {
 
     // Validación vacios
     if (nombre == "" || correo == "" || telefono == "" || direccion == "" || apellidos == "") {
-        alert("Todos los campos deben ser llenados");
+        Swal.fire({
+            title: 'Alerta!',
+            text: 'Todos los campos deben ser llenados!',
+            icon: 'warning'
+        });
         return false;
     }
 
     // Validación longitud
     if (nombre.length < 2) {
-        alert("El nombre debe tener al menos 2 caracteres");
+        Swal.fire({
+            title: 'Alerta!',
+            text: 'El nombre debe tener al menos 2 caracteres!',
+            icon: 'warning'
+        });
         return false;
     }
 
     // Validación formato correo
     var regexCorreo = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     if (!regexCorreo.test(correo)) {
-        alert("El correo electrónico no es válido");
+        Swal.fire({
+            title: 'Alerta!',
+            text: 'El correo electrónico no es válido!',
+            icon: 'warning'
+        });
         return false;
     }
 
